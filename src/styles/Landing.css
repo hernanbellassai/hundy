@@ -5,11 +5,44 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-   
+  flex-direction: column;
 }
 .logo{
-  font-size: 160px;
-  margin-left:80px;
+  font-size: 190px;
+ 
  font-family: 'Lilita One', cursive;
  color:#FF7B00;
+ margin-bottom: 2%;
+}
+.flecha{
+  justify-content: center;
+  align-items: flex-end;
+}
+.perrito-titulo{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+.titulito-boton{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+}
+.boton{
+  display: flex;
+  justify-content: center;
+  background-color: #FF7B00;
+  border-radius: 30px;
+  margin-bottom: 29%;
+  padding:2%;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  
 }
