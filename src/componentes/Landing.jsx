@@ -53,8 +53,6 @@ function Landing() {
               <h1>pepe</h1>
             </div>
           </ParallaxLayer>
-
-          <ParallaxLayer></ParallaxLayer>
         </Parallax>
       </div>
     </>
