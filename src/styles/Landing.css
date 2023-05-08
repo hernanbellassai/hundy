@@ -46,6 +46,9 @@
   cursor: pointer;
   
 }
+
+
+
 .segundo{ 
   display: flex;
   background-color: rgb(223, 223, 223);
@@ -54,5 +57,6 @@
   justify-content: center;
   align-items: center;
 }
-
+ 
 .segundo-fondo{}
+

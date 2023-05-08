@@ -4,38 +4,29 @@ import "../styles/Home.css";
 import verde from "../assets/verde.png";
 import ciudad from "../assets/ciudad.png";
 import prado from "../assets/prado.png";
+
 function Home() {
   return (
     <div>
-      <Parallax
-        pages={4}
-        style={{
-          display: "flex",
-          backgroundColor: "#87CEEB",
-          width: "100vw",
-          height: "100vh",
-        }}
-      >
+      <Parallax className="contenedor" pages={4}>
         <ParallaxLayer
+          className="logo"
           offset={0}
           speed={1}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            fontSize: "90px",
-            alignItems: "center",
-            alignContent: "center",
-            fontFamily: "Lilita One",
+          // style={{
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   fontSize: "80px",
+          //   alignItems: "center",
+          //   alignContent: "center",
+          //   fontFamily: "Lilita One",
 
-            color: "#FF7B00",
-            height: "5%",
-            marginTop: "3%",
-            paddingBottom: "2%",
-            // width: "100%",
-            // height: "100%",
-
-            // Ajustar este valor
-          }}
+          //   color: "#FF7B00",
+          //   height: "5%",
+          //   marginTop: "3%",
+          //   paddingBottom: "2%",
+          //   // Ajustar este valor
+          // }}
         >
           <h1>hundy</h1>
         </ParallaxLayer>
@@ -87,6 +78,10 @@ function Home() {
             height: "100%",
             backgroundImage: "linear-gradient(to bottom, #78B422, #371B01)",
             backgroundSize: "cover",
+            "@media (max-width: 600px)": {
+              backgroundImage: "linear-gradient(to bottom, #ffff, #371B01)",
+              // Otros estilos específicos para pantallas pequeñas
+            },
           }}
         >
           <div
@@ -95,7 +90,7 @@ function Home() {
               justifyContent: "center",
               color: "white",
               fontSize: "90px",
-              
+
               borderRadius: "30px",
               marginTop: "8%",
               marginRight: "50%",
