@@ -22,6 +22,30 @@ function Home() {
           style={{
             display: "flex",
             justifyContent: "center",
+            fontSize: "90px",
+            alignItems: "center",
+            alignContent: "center",
+            fontFamily: "Lilita One",
+
+            color: "#FF7B00",
+            height: "5%",
+            marginTop: "3%",
+            paddingBottom: "2%",
+            // width: "100%",
+            // height: "100%",
+
+            // Ajustar este valor
+          }}
+        >
+          <h1>hundy</h1>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={0}
+          speed={2}
+          style={{
+            display: "flex",
+            justifyContent: "center",
             alignItems: "center",
             width: "80%",
             height: "100%",
@@ -29,11 +53,7 @@ function Home() {
             backgroundSize: "100%",
             paddingBottom: "60%", // Ajustar este valor
           }}
-        >
-          {/* <div className="pepe">
-            <h1>pepe</h1>
-          </div> */}
-        </ParallaxLayer>
+        ></ParallaxLayer>
 
         <ParallaxLayer
           offset={0}
@@ -65,10 +85,28 @@ function Home() {
             top: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "#80B725",
+            backgroundImage: "linear-gradient(to bottom, #78B422, #371B01)",
             backgroundSize: "cover",
           }}
-        />
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              color: "white",
+              fontSize: "90px",
+              
+              borderRadius: "30px",
+              marginTop: "8%",
+              marginRight: "50%",
+              padding: "1%",
+              paddingTop: "1%",
+              fontFamily: "Bebas Neue",
+            }}
+          >
+            Encuentra a tu amigo peludo perdido con Hundy:
+          </div>
+        </ParallaxLayer>
       </Parallax>
     </div>
   );
