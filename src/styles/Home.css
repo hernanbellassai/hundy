@@ -1,16 +1,51 @@
 .contenedor{
   display: flex;
+ background-color: #87CEEB;
+ width: 100vw;
+height: 100vh;
+}
+
+.logo{
+  display: flex;
   justify-content: center;
+  align-items: top;
+  font-size: 80px;
+  height: 100px;
+  width: 100px;
+  font-family: "Lilita One";
+  
+  background-color: rgba(255, 255, 255, 0.166);
+  margin-right: 20px;
+  color: #FF7B00;
+  
+  padding-bottom: 100%;
+  border-radius:20% ;
+  
   
 }
 
+@media(max-width:1200px){
+  .logo{
+    color:#FF7B00;
+    font-size: 50px;
+  }
+}
+@media(max-width:870px){
+  .logo{
+    font-size:40px;
+  }
+}
+@media(max-width:620px){
+  .logo{
+    font-size:35px;
+    padding-bottom: 20px;
+  }
+}
 
-.pepe{
-  background-color: aquamarine;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+@media(max-width:479px){
+  .logo{
+    font-size: 30px;
+  }
 }
