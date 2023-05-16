@@ -11,11 +11,9 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div>
+    <div className="con">
       <Parallax className="contenedor" pages={2}>
-        <ParallaxLayer speed={8}>
-          <NavBar />
-        </ParallaxLayer>
+        <NavBar />
 
         <ParallaxLayer className="hundy" offset={0} speed={1}>
           <h1 style={{ fontSize: "120px" }}>hundy</h1>
@@ -28,7 +26,7 @@ function Home() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "80%",
+            width: "75%",
             height: "100%",
             backgroundImage: `url(${ciudad})`,
             backgroundSize: "100%",
@@ -46,34 +44,31 @@ function Home() {
             display: "flex",
             justifyContent: "center",
             alignItems: "flex-start", // Ajustar este valor
-            width: "100vw",
-            height: "150vh",
+            width: "100%",
+            height: "100%",
             backgroundImage: `url(${verde})`,
             backgroundSize: "100%",
-            marginTop: "7%",
+            marginTop: "3%",
           }}
         >
           {/* <div className="segundo-fondo">
             <h1>hundy</h1>
           </div> */}
         </ParallaxLayer>
+
         {/* el offset es para indicar desde que pagina quiero que este */}
 
         <ParallaxLayer
-          offset={0.99}
+          offset={0}
           speed={5}
           style={{
-            position: "absolute",
             left: 0,
             top: 0,
             width: "100%",
             height: "100%",
             backgroundImage: "linear-gradient(to bottom, #78B422, #371B01)",
-            backgroundSize: "cover",
-            "@media (max-width: 600px)": {
-              backgroundImage: "linear-gradient(to bottom, #ffff, #371B01)",
-              // Otros estilos específicos para pantallas pequeñas
-            },
+
+            marginTop: "51%",
           }}
         >
           <div
@@ -93,6 +88,26 @@ function Home() {
           >
             Encuentra a tu amigo peludo perdido con Hundy:
           </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={0}
+          speed={5}
+          factor={2}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-start", // Ajustar este valor
+            width: "100%",
+            height: "3%",
+            backgroundColor: "#ffff",
+            backgroundSize: "100%",
+            marginTop: "50%",
+          }}
+        >
+          {/* <div className="segundo-fondo">
+            <h1>hundy</h1>
+          </div> */}
         </ParallaxLayer>
       </Parallax>
     </div>

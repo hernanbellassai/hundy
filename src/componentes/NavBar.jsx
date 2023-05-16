@@ -1,13 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import Modal from "./Modal";
 
 function NavBar() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
-
   return (
     <nav className="navbar navbar-expand-lg " style={{ background: "#ffff" }}>
       <a
@@ -56,11 +50,9 @@ function NavBar() {
             whileHover={{ scale: 0.9 }}
             whileTap={{ scale: 0.9 }}
             className="btn btn-primary"
-            onClick={() => (modalOpen ? close() : open())}
           >
             Download App
           </motion.button>
-          {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
         </div>
       </div>
     </nav>
