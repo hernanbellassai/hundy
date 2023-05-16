@@ -4,31 +4,21 @@ import "../styles/Home.css";
 import verde from "../assets/verde.png";
 import ciudad from "../assets/ciudad.png";
 import prado from "../assets/prado.png";
+import NavBar from "./NavBar";
+import Modal from "./Modal";
+import useState from "react";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <div>
-      <Parallax className="contenedor" pages={4}>
-        <ParallaxLayer
-          className="logo"
-          offset={0}
-          speed={1}
-          // style={{
-          //   display: "flex",
-          //   justifyContent: "center",
-          //   fontSize: "80px",
-          //   alignItems: "center",
-          //   alignContent: "center",
-          //   fontFamily: "Lilita One",
+      <Parallax className="contenedor" pages={2}>
+        <ParallaxLayer speed={8}>
+          <NavBar />
+        </ParallaxLayer>
 
-          //   color: "#FF7B00",
-          //   height: "5%",
-          //   marginTop: "3%",
-          //   paddingBottom: "2%",
-          //   // Ajustar este valor
-          // }}
-        >
-          <h1>hundy</h1>
+        <ParallaxLayer className="hundy" offset={0} speed={1}>
+          <h1 style={{ fontSize: "120px" }}>hundy</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -44,7 +34,9 @@ function Home() {
             backgroundSize: "100%",
             paddingBottom: "60%", // Ajustar este valor
           }}
-        ></ParallaxLayer>
+        >
+          {" "}
+        </ParallaxLayer>
 
         <ParallaxLayer
           offset={0}
