@@ -14,7 +14,7 @@ height: 100vh;
   
   font-family: "Lilita One";
   
-  background-color: rgba(255, 255, 255, 0.166);
+ 
  
   color: #FF7B00;
   
@@ -26,7 +26,14 @@ height: 100vh;
 .display-1{
   font-size: 60%;
 }
-
+@media(max-width :600px){
+  .segundo{
+    background-color: #FF7B00;
+  }
+}
+.con{
+  background-color: #FF7B00;
+}
 
 
 
