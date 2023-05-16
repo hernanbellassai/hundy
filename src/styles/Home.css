@@ -5,47 +5,28 @@
 height: 100vh;
 }
 
-.logo{
+.hundy{
   display: flex;
   justify-content: center;
-  align-items: top;
-  font-size: 80px;
-  height: 100px;
-  width: 100px;
+  top:0;
+  left:0;
+  font-size: 40%;
+  
   font-family: "Lilita One";
   
   background-color: rgba(255, 255, 255, 0.166);
-  margin-right: 20px;
+ 
   color: #FF7B00;
   
-  padding-bottom: 100%;
+  padding-top: 50px;
   border-radius:20% ;
   
   
 }
-
-@media(max-width:1200px){
-  .logo{
-    color:#FF7B00;
-    font-size: 50px;
-  }
-}
-@media(max-width:870px){
-  .logo{
-    font-size:40px;
-  }
-}
-@media(max-width:620px){
-  .logo{
-    font-size:35px;
-    padding-bottom: 20px;
-  }
+.display-1{
+  font-size: 60%;
 }
 
 
 
-@media(max-width:479px){
-  .logo{
-    font-size: 30px;
-  }
-}
+
