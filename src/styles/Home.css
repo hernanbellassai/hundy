@@ -120,4 +120,25 @@ height: 100vh;
     
   }
 }
-
+@media(max-width:428px){
+  
+  .parallax{
+    margin-top: 60%;
+    font-size: 40%;
+  }
+  .ciudad{
+    margin-bottom: 100%;
+  }
+  .img-fluid{
+    margin-top: 130%;
+  }
+  .contenedor-verde{
+    margin-top:130%;
+    
+  }
+  .barra-negra{
+    margin-top:20%;
+  }
+ 
+}
+  
