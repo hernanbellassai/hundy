@@ -29,6 +29,30 @@ height: 100vh;
   background-color: #FF7B00;
 }
 
+
+
+@media(max-width:1920px){
+  
+  .parallax{
+    margin-top: 4%;
+  }
+  .ciudad{
+    margin-top: 6%;
+  }
+  .img-fluid{
+    margin-top: 8%;
+  }
+  .contenedor-verde{
+    margin-top:7%;
+    
+  }
+  .barra-negra{
+    margin-top:20%;
+  }
+ 
+}
+
+
 @media(max-width:1600px){
   
   .parallax{
