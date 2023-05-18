@@ -88,16 +88,16 @@ height: 100vh;
   
 
 
-@media(max-width:1280px){
+@media(max-width:1280px) and (max-height: 800px){
   
   .parallax{
     margin-top: 5%;
   }
   .img-fluid{
-    margin-top: 5%;
+    margin-top: 11%;
   }
   .contenedor-verde{
-    margin-top:6%;
+    margin-top:12%;
     
   }
   .barra-negra{
@@ -120,6 +120,27 @@ height: 100vh;
     
   }
 }
+
+
+
+
+@media (max-width: 480px){
+  .parallax{
+    margin-top: 70%;
+    font-size: 20em;
+  }
+  .ciudad{
+    margin-bottom: 29%;
+  }
+  .img-fluid{
+    margin-top: 130%;
+  }
+  .contenedor-verde{
+    margin-top:130%;
+    
+  }
+}
+
 @media(max-width:428px) and (max-height: 926px){
   
   .parallax{
