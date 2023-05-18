@@ -11,14 +11,24 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="con">
-      <Parallax className="contenedor" pages={2}>
+    <div className="coner">
+      <Parallax
+        style={{
+          display: "flex",
+          backgroundColor: "#87CEEB",
+          width: "100vw",
+          height: " 100vh",
+        }}
+        pages={2}
+      >
         <NavBar />
-
-        <ParallaxLayer className="hundy" offset={0} speed={1}>
-          <h1 style={{ fontSize: "120px" }}>hundy</h1>
-        </ParallaxLayer>
-
+        <dir>
+          <ParallaxLayer className="hundy" offset={0} speed={1}>
+            <h1 className="parallax" style={{ fontSize: "9vw" }}>
+              hundy
+            </h1>
+          </ParallaxLayer>
+        </dir>
         <ParallaxLayer
           offset={0}
           speed={2}
@@ -28,12 +38,12 @@ function Home() {
             alignItems: "center",
             width: "75%",
             height: "100%",
-            backgroundImage: `url(${ciudad})`,
+
             backgroundSize: "100%",
             paddingBottom: "60%", // Ajustar este valor
           }}
         >
-          {" "}
+          <img src={ciudad} alt="ciudad" style={{ width: "100%" }} />{" "}
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -43,17 +53,18 @@ function Home() {
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-start", // Ajustar este valor
+            alignItems: "flex-start",
             width: "100%",
             height: "100%",
-            backgroundImage: `url(${verde})`,
-            backgroundSize: "100%",
             marginTop: "3%",
           }}
         >
-          {/* <div className="segundo-fondo">
-            <h1>hundy</h1>
-          </div> */}
+          <img
+            src={verde}
+            alt="verde"
+            className="img-fluid"
+            style={{ width: "100%" }}
+          />
         </ParallaxLayer>
 
         {/* el offset es para indicar desde que pagina quiero que este */}
@@ -62,53 +73,68 @@ function Home() {
           offset={0}
           speed={5}
           style={{
+            display: "flex",
             left: 0,
             top: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: "linear-gradient(to bottom, #78B422, #371B01)",
+            justifyContent: "center",
+            width: "100vw",
+            height: "100vh",
 
             marginTop: "51%",
           }}
         >
           <div
+            className="contenedor-verde"
             style={{
               display: "flex",
-              justifyContent: "center",
-              color: "white",
-              fontSize: "90px",
-
-              borderRadius: "30px",
-              marginTop: "8%",
-              marginRight: "50%",
-              padding: "1%",
-              paddingTop: "1%",
-              fontFamily: "Bebas Neue",
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "green",
             }}
           >
-            Encuentra a tu amigo peludo perdido con Hundy:
+            <div
+              className="text-center text-white display-4"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundImage: "linear-gradient(to bottom, #78B422, #371B01)",
+                width: "20vw",
+                height: "10vh",
+                padding: "1vw",
+                paddingTop: "1vw",
+                paddingLeft: "1vw",
+                fontFamily: "Bebas Neue",
+                backgroundColor: "#2c2c2c",
+              }}
+            >
+              con Hundy
+            </div>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={0}
           speed={5}
           factor={2}
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-start", // Ajustar este valor
-            width: "100%",
-            height: "3%",
-            backgroundColor: "#ffff",
-            backgroundSize: "100%",
-            marginTop: "50%",
+            alignItems: "center",
+            // Ajusta el valor según tus necesidades
           }}
         >
-          {/* <div className="segundo-fondo">
-            <h1>hundy</h1>
-          </div> */}
-        </ParallaxLayer>
+          <div
+            className="barra-negra"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: "100vw",
+              height: "2vh",
+              backgroundColor: "#2c2c2c",
+            }}
+          ></div>
+        </ParallaxLayer> */}
       </Parallax>
     </div>
   );
