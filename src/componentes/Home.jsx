@@ -43,7 +43,12 @@ function Home() {
             paddingBottom: "60%", // Ajustar este valor
           }}
         >
-          <img src={ciudad} alt="ciudad" style={{ width: "100%" }} />{" "}
+          <img
+            className="ciudad"
+            src={ciudad}
+            alt="ciudad"
+            style={{ width: "100%" }}
+          />{" "}
         </ParallaxLayer>
 
         <ParallaxLayer
