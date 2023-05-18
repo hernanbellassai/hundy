@@ -10,7 +10,7 @@ height: 100vh;
   justify-content: center;
   top:0;
   left:0;
-  font-size: 40%;
+  font-size: 70%;
   
   font-family: "Lilita One";
   
@@ -18,22 +18,87 @@ height: 100vh;
  
   color: #FF7B00;
   
-  padding-top: 50px;
+  padding-top: 60px;
   border-radius:20% ;
   
   
 }
-.display-1{
-  font-size: 60%;
-}
-@media(max-width :600px){
-  .segundo{
-    background-color: #FF7B00;
-  }
-}
+
+
 .con{
   background-color: #FF7B00;
 }
 
+@media(max-width:1600px){
+  
+  .parallax{
+    margin-top: 9%;
+  }
+  .img-fluid{
+    margin-top: 22%;
+  }
+  .contenedor-verde{
+    margin-top:24%;
+    
+  }
+  .barra-negra{
+    margin-top:20%;
+  }
+ 
+}
 
+
+
+@media(max-width:1400px){
+  
+  .parallax{
+    margin-top: 9%;
+  }
+  .img-fluid{
+    margin-top: 12%;
+  }
+  .contenedor-verde{
+    margin-top:14%;
+    
+  }
+  .barra-negra{
+    margin-top:20%;
+  }
+ 
+}
+  
+
+
+@media(max-width:1280px){
+  
+  .parallax{
+    margin-top: 5%;
+  }
+  .img-fluid{
+    margin-top: 5%;
+  }
+  .contenedor-verde{
+    margin-top:6%;
+    
+  }
+  .barra-negra{
+    margin-top:20%;
+  }
+ 
+}
+  
+
+@media(max-width:1024px){
+  .parallax{
+    margin-top: 5%;
+    font-size: 40%;
+  }
+  .img-fluid{
+    margin-top: 6%;
+  }
+  .contenedor-verde{
+    margin-top:8%;
+    
+  }
+}
 
