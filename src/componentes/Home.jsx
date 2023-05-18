@@ -24,7 +24,7 @@ function Home() {
         <NavBar />
         <dir>
           <ParallaxLayer className="hundy" offset={0} speed={1}>
-            <h1 className="parallax" style={{ fontSize: "9vw" }}>
+            <h1 className="parallax" style={{ fontSize: "10vw" }}>
               hundy
             </h1>
           </ParallaxLayer>
